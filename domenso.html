@@ -3,140 +3,227 @@
 <title>Domenso</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<script class="cssdeck" src="js/act.js"></script>
+    <script>
+      function onLoadHandler() {
+        loadFuncs();
+      }
+    </script>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/color.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/solid.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/fontawesome.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-<body class="w3-theme-15">
+<body class="dom-theme-15">
 
 <!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="/" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home"></i></a>
-  <a style="pointer-events: none;" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
-  <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
-      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+<div class="dom-top">
+ <div class="dom-bar dom-theme-d2 dom-left-align dom-large">
+  <a class="dom-bar-item dom-button dom-hide-medium dom-hide-large dom-right dom-padding-large dom-hover-white dom-large dom-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="/" class="dom-bar-item dom-button dom-padding-large dom-theme-d4"><i class="fa fa-home"></i></a>
+  <a style="pointer-events: none;" class="dom-bar-item dom-button dom-hide-small dom-padding-large dom-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="#" class="dom-bar-item dom-button dom-hide-small dom-padding-large dom-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="dom-dropdown-hover dom-hide-small">
+    <button class="dom-button dom-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="dom-badge dom-right dom-small dom-green">3</span></button>     
+    <div class="dom-dropdown-content dom-card-4 dom-bar-block" style="width:300px">
+      <a href="#" class="dom-bar-item dom-button">Damn what a nice page</a>
+      <a href="#" class="dom-bar-item dom-button">You should definitely hire this guy</a>
+      <a href="#" class="dom-bar-item dom-button">I bet he's funny too</a>
     </div>
   </div>
-  <div class="w3-container w3-right w3-hide-small w3-padding-small">
+  <div class="dom-container dom-right dom-hide-small dom-padding-small">
     <input type="text" name="search" placeholder="search">
-    <input class="w3-button" type="submit" value="Submit">
+    <input class="dom-button" type="submit" value="Submit">
   </div>
  </div>
 </div>
 
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+<div id="navDemo" class="dom-bar-block dom-theme-d2 dom-hide dom-hide-large dom-hide-medium dom-large">
+  <a href="#" class="dom-bar-item dom-button dom-padding-large">Link 1</a>
+  <a href="#" class="dom-bar-item dom-button dom-padding-large">Link 2</a>
+  <a href="#" class="dom-bar-item dom-button dom-padding-large">Link 3</a>
+  <a href="#" class="dom-bar-item dom-button dom-padding-large">My Profile</a>
 </div>
 
 <!-- Page Container -->
-<div class="w3-content w3-container" style="max-width:1400px;margin-top:80px">
+<div class="dom-content dom-container" style="max-width:1400px;margin-top:80px">
 
   <!-- The Grid -->
-  <div class="w3-row-padding">
+  <div class="dom-row-padding">
   
     <!-- Left Column -->
-    <div class="w3-third">
+    <div class="dom-third">
     
     
     <!--Curriculum-->
-      <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
-        <div class="w3-display-container">
+      <div class="dom-white dom-text-grey dom-card-4 dom-margin-bottom">
+        <div class="dom-display-container">
           <img src="pics.jpg" style="width:100%" alt="Avatar">
         </div>
-        <div class="w3-display-container w3-margin-left">
-          <p><i class="fa fa-address-card fa-fw w3-margin-right w3-large w3-text-teal"></i>Alejandro Domene</p>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Science Student (ITESM)</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Monterrey, Mx</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>jadomene99@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+52 8112986739</p>
-          <a href="https://www.linkedin.com/in/domenecs/" style="text-decoration: none"><i class="fa fa-link fa-fw w3-margin-right w3-large w3-text-teal"></i>Linkedin</a>
-          <a href="https://github.com/Domene99" style="text-decoration: none"><i class="fa fa-link fa-fw w3-margin-right w3-large w3-text-teal"></i>Github</a>
+        <div class="dom-display-container dom-margin-left">
+          <p><i class="fa fa-address-card fa-fw dom-margin-right dom-large dom-text-teal"></i>Alejandro Domene</p>
+          <p><i class="fa fa-briefcase fa-fw dom-margin-right dom-large dom-text-teal"></i>Computer Science Student (ITESM)</p>
+          <p><i class="fa fa-home fa-fw dom-margin-right dom-large dom-text-teal"></i>Monterrey, Mx</p>
+          <p><i class="fa fa-envelope fa-fw dom-margin-right dom-large dom-text-teal"></i>jadomene99@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw dom-margin-right dom-large dom-text-teal"></i>+52 8112986739</p>
+          <a href="https://www.linkedin.com/in/domenecs/" target="_blank" style="text-decoration: none"><i class="fa fa-link fa-fw dom-margin-right dom-large dom-text-teal"></i>Linkedin</a>
+          <a href="https://github.com/Domene99" target="_blank" style="text-decoration: none"><i class="fa fa-link fa-fw dom-margin-left dom-large dom-text-teal"></i>Github</a>
           <hr>
         </div>
       </div>
       
       <!--Work exp-->
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Software Development Intern / Coflex</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 - Aug 2018</h6>
-          <h6 class="w3-text-teal"><i class="fa fa-laptop fa-fw w3-margin-right"></i>html, css, js, vb.net</h6>
-          <p>Intern for pumbling factory where I built and implemented 5 of their programs used mainly for machine checkups and data management, improving response time against failures by over 80%</p>
-          <hr>
+      <div class="dom-container dom-card dom-white dom-margin-bottom">
+        <h2 class="dom-text-grey dom-padding-16"><i class="fa fa-suitcase fa-fw dom-margin-right dom-xxlarge dom-text-teal"></i>Work Experience</h2>
+      <div class="dom-container">
+      <h5 class="dom-opacity"><b>Software Development Intern / Coflex</b></h5>
+      <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>Jun 2018 - Aug 2018</h6>
+      <h6 class="dom-text-teal"><i class="fa fa-laptop fa-fw dom-margin-right"></i>html, css, js, vb.net</h6>
+      <p>Intern for pumbling factory where I built and implemented 5 of their programs used mainly for machine checkups and data management, improving response time against failures by over 80%</p>
+      <hr>
+      </div>
+        
+      <div class="dom-container">
+      <h5 class="dom-opacity"><b>Pcb Ensambler / Higia Tech</b></h5>
+      <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>Sep 2017 - Nov 2017</h6>
+      <h6 class="dom-text-teal"><i class="fa fa-laptop fa-fw dom-margin-right"></i>Pcb, Electrical Component</h6>
+      <p>I worked for Higia to ensemble the flexible pcb’s in the company’s cancer detecting bra.</p>
+      </div>
+      <hr>
+      
+      <div class="dom-container">
+      <h5 class="dom-opacity"><b>Software Developer / Reynoguia</b></h5>
+      <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>Sep 2017 - Nov 2017</h6>
+      <h6 class="dom-text-teal"><i class="fa fa-laptop fa-fw dom-margin-right"></i>Java, Csv</h6>
+      <p>I developed an application to improve organization. The company had an excel file with bad management, I saved them approximately 20% of time</p>
+      </div>
+      <hr>
+      
+      <div class="dom-container">
+      <h5 class="dom-opacity"><b>Workshop Speaker / Itesm</b></h5>
+      <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>29 Apr 2017</h6>
+      <h6 class="dom-text-teal"><i class="fa fa-laptop fa-fw dom-margin-right"></i>Swift</h6>
+      <p>Workshop speaker for an international seminar hosted by Tecnológico de Monterrey and the AT student chapter</p>
+      </div>
+      <hr>
+      
+      <div class="dom-container">
+      <h5 class="dom-opacity"><b>Instructor / T-Rex Education</b></h5>
+      <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>Summer Of 2016 And Summer Of 2017</h6>
+      <h6 class="dom-text-teal"><i class="fa fa-laptop fa-fw dom-margin-right"></i>WRO, Arduino, Electronics, Mechatronics, Game Maker</h6>
+      <p>Summer Robotics and Professions Camp instructor for junior high students. Office work where I did the documentation for all incoming products. Saturday courses teaching mindstorms for WRO and arduino to junior high kids</p>
+      </div>
+      
+      </div>
+    
+      <!--Awards-->
+      <div class="dom-container dom-card dom-white dom-margin-bottom">
+        <h2 class="dom-text-grey dom-padding-16"><i class="fa fa-trophy fa-fw dom-margin-right dom-xxlarge dom-text-teal"></i>Awards</h2>
+        
+        <div class="dom-container">
+          <h5 class="dom-opacity"><b>Hack Monterrey</b></h5>
+          <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>Aug 26 2018</h6>
+          <h6 class="dom-text-teal"><i class="fa fa-award fa-fw dom-margin-right"></i>1st place</h6>
+          <a class="dom-text-teal" href="#dlc" style="text-decoration: none"><i class="fa fa-hammer fa-fw dom-margin-right dom-large dom-text-teal"></i>Dynamic Logic Controller</a>
+          <p>1st place in HackMty 2018, biggest hackathon in Mexico</p>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
+        <hr>
+        
+        <div class="dom-container">
+          <h5 class="dom-opacity"><b>Hack Monterrey</b></h5>
+          <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>Aug 27 2017</h6>
+          <h6 class="dom-text-teal"><i class="fa fa-award fa-fw dom-margin-right"></i>2nd place</h6>
+          <a class="dom-text-teal" href="#neweyes" style="text-decoration: none"><i class="fa fa-hammer fa-fw dom-margin-right dom-large dom-text-teal"></i>New Eyes</a>
+          <p>2nd place in HackMty 2017, biggest hackathon in Mexico</p>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        <hr>
+        
+        <div class="dom-container">
+          <h5 class="dom-opacity"><b>Hack Monterrey</b></h5>
+          <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>Aug 27 2018</h6>
+          <h6 class="dom-text-teal"><i class="fa fa-award fa-fw dom-margin-right"></i>1st place software</h6>
+          <a class="dom-text-teal" href="#neweyes" style="text-decoration: none"><i class="fa fa-hammer fa-fw dom-margin-right dom-large dom-text-teal"></i>New Eyes</a>
+          <p>1st place in HackMty 2017, biggest hackathon in Mexico</p>
         </div>
+        <hr>
+        
+        <div class="dom-container">
+          <h5 class="dom-opacity"><b>Hack Prepas</b></h5>
+          <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>Oct 26 2017</h6>
+          <h6 class="dom-text-teal"><i class="fa fa-award fa-fw dom-margin-right"></i>1st place</h6>
+          <a class="dom-text-teal" href="#braillearn" style="text-decoration: none"><i class="fa fa-hammer fa-fw dom-margin-right dom-large dom-text-teal"></i>Braillearn</a>
+          <p>1st place in Hack Prepas 2017, a high school only hackathon</p>
+        </div>
+        <hr>
+
+        <div class="dom-container">
+          <h5 class="dom-opacity"><b>First Robotics Competition (FRC)</b></h5>
+          <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>2018</h6>
+          <h6 class="dom-text-teal"><i class="fa fa-award fa-fw dom-margin-right"></i>Undefeated Winners and Engineering Inspiration</h6>
+          <h6 class="dom-text-teal"><i class="fa fa-globe fa-fw dom-margin-right"></i>Laguna Regional</h6>
+          <p>Robotics Competition in which my 16 partners and I built a robot in 6 weeks and won some of the most prestigious awards in one of only 2 of Mexico's regionals.</p>
+        </div>
+        <hr>
+        
+        <div class="dom-container">
+          <h5 class="dom-opacity"><b>World Educational Robot Contest (WER)</b></h5>
+          <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>2017</h6>
+          <h6 class="dom-text-teal"><i class="fa fa-award fa-fw dom-margin-right"></i>State Representative</h6>
+          <p>Robotics Competition in which my partner and I built a robot using Abilix to beat challenges in the course</p>
+        </div>
+        
       </div>
 
-        <!--Education-->
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+
+      <!--Education-->
+      <div class="dom-container dom-card dom-white dom-margin-bottom">
+        <h2 class="dom-text-grey dom-padding-16"><i class="fa fa-certificate fa-fw dom-margin-right dom-xxlarge dom-text-teal"></i>Education</h2>
+        <div class="dom-container">
+          <h5 class="dom-opacity"><b>domSchools.com</b></h5>
+          <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>Forever</h6>
           <p>Web Development! All I need to know in one place</p>
           <hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+        <div class="dom-container">
+          <h5 class="dom-opacity"><b>London Business School</b></h5>
+          <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>2013 - 2015</h6>
           <p>Master Degree</p>
           <hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+        <div class="dom-container">
+          <h5 class="dom-opacity"><b>School of Coding</b></h5>
+          <h6 class="dom-text-teal"><i class="fa fa-calendar fa-fw dom-margin-right"></i>2010 - 2013</h6>
           <p>Bachelor Degree</p><br>
         </div>
       </div>
       
       <!--Technical Skills--> 
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programming Languages</b></p>
+        <div class="dom-container dom-card dom-white dom-margin-bottom">
+          <p class="dom-large"><b><i class="fa fa-asterisk fa-fw dom-margin-right dom-text-teal"></i>Programming Languages</b></p>
           <p>Most Comfortable</p>
-            <div class="w3-container w3-center w3-teal">Java (Certified by Sololearn), Python</div>
+            <div class="dom-container dom-center dom-teal">Java (Certified by Sololearn), Python</div>
           <p>Comfortable</p>
-            <div class="w3-container w3-center w3-teal">Vb.net, c++, Arduino, SQL, Swift</div>
+            <div class="dom-container dom-center dom-teal">Vb.net, c++, Arduino, SQL, Swift</div>
           <p>Beginner</p>
-            <div class="w3-container w3-center w3-teal">Php (Certified by Sololearn), Javascript (Certified by Sololearn), Html</div>
+            <div class="dom-container dom-center dom-teal">Php (Certified by Sololearn), Javascript (Certified by Sololearn), Html</div>
           <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p class="dom-large dom-text-theme"><b><i class="fa fa-globe fa-fw dom-margin-right dom-text-teal"></i>Languages</b></p>
           <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:24px;width:100%">b2 certification</div>
+          <div class="dom-light-grey dom-round-xlarge">
+            <div class="dom-container dom-center dom-round-xlarge dom-teal" style="height:24px;width:100%">b2 certification</div>
           </div>
           <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:24px;width:100%">Native</div>
+          <div class="dom-light-grey dom-round-xlarge">
+            <div class="dom-container dom-center dom-round-xlarge dom-teal" style="height:24px;width:100%">Native</div>
           </div>
           <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:35%"></div>
+          <div class="dom-light-grey dom-round-xlarge">
+            <div class="dom-round-xlarge dom-teal" style="height:24px;width:35%">a2 not certified</div>
           </div>
           <br>
         </div>
@@ -148,45 +235,70 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </div>
 
     <!--Posts -->
-    <div class="w3-twothird">
-      <div class="w3-container">
-          <p class="w3-large"><b><i class="fa fa-code fa-fw w3-margin-right w3-text-teal"></i>Projects</b></p>
+    <div class="dom-twothird">
+      <div class="dom-container">
+          <p class="dom-large"><b><i class="fa fa-code fa-fw dom-margin-right dom-text-teal"></i>Projects</b></p>
       </div>
       
       
       <!--POST-->
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="pics.jpg" alt="Avatar" class="w3-left w3-round-small w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">Aug 2018</span>
+      <div id="dlc" class="dom-container dom-card dom-white dom-round dom-margin"><br>
+        <img src="pics.jpg" alt="Avatar" class="dom-left dom-round-small dom-margin-right" style="width:8%">
+        <span class="dom-right dom-opacity">Aug 2018</span>
         <h4>Dynamic Logic Controller</h4><br>
-        <div class="w3-container">
-            <img src="pics.jpg" class="w3-center w3-round" style="width:45%">
+        <div class="dom-container dom-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TXbi7hI_Tdo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <p>DLC, Dynamic Logic Controller, I focused on all of the software for a shape shifting device for vr which can adapt to the shape of a grabbed object, it can have uses in Medicinal rehabilitations.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+        <button class="dom-right post1" id="more1" onclick="more1Click()">More</button>
+        <div class="dom-container extra1" id="extra1">
+            <p>hola hola hola</p>
+            <br>
+            <h>hola hola hola</h>
+            <br>
+            <button class="dom-right post1" id="less1" onclick="less1Click()">Less</button>
+        </div>
+        
       </div>
       
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">16 min</span>
-        <h4>Jane Doe</h4><br>
-        <hr class="w3-clear">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      <!--POST-->
+      <div id="feelings2go" class="dom-container dom-card dom-white dom-round dom-margin"><br>
+        <img src="pics.jpg" alt="Avatar" class="dom-left dom-round-small dom-margin-right" style="width:8%">
+        <span class="dom-right dom-opacity">Aug 2018</span>
+        <h4>Dynamic Logic Controller</h4><br>
+        <div class="dom-container dom-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TXbi7hI_Tdo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <p>DLC, Dynamic Logic Controller, I focused on all of the software for a shape shifting device for vr which can adapt to the shape of a grabbed object, it can have uses in Medicinal rehabilitations.</p>
+        <button class="dom-right post1" id="more1" onclick="more1Click()">More</button>
+        <div class="dom-container extra1" id="extra1">
+            <p>hola hola hola</p>
+            <br>
+            <h>hola hola hola</h>
+            <br>
+            <button class="dom-right post1" id="less1" onclick="less1Click()">Less</button>
+        </div>
+        
       </div>  
 
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">32 min</span>
-        <h4>Angie Jane</h4><br>
-        <hr class="w3-clear">
-        <p>Have you seen this?</p>
-        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      <!--POST-->
+      <div id="braillearn" class="dom-container dom-card dom-white dom-round dom-margin"><br>
+        <img src="pics.jpg" alt="Avatar" class="dom-left dom-round-small dom-margin-right" style="width:8%">
+        <span class="dom-right dom-opacity">Aug 2018</span>
+        <h4>Dynamic Logic Controller</h4><br>
+        <div class="dom-container dom-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TXbi7hI_Tdo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <p>DLC, Dynamic Logic Controller, I focused on all of the software for a shape shifting device for vr which can adapt to the shape of a grabbed object, it can have uses in Medicinal rehabilitations.</p>
+        <button class="dom-right post1" id="more1" onclick="more1Click()">More</button>
+        <div class="dom-container extra1" id="extra1">
+            <p>hola hola hola</p>
+            <br>
+            <h>hola hola hola</h>
+            <br>
+            <button class="dom-right post1" id="less1" onclick="less1Click()">Less</button>
+        </div>
+        
       </div> 
 
     <!-- End Right Column -->
@@ -198,15 +310,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<footer class="dom-container dom-teal dom-center dom-margin-top">
   <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <i class="fa fa-facebook-official dom-hover-opacity"></i>
+  <i class="fa fa-instagram dom-hover-opacity"></i>
+  <i class="fa fa-snapchat dom-hover-opacity"></i>
+  <i class="fa fa-pinterest-p dom-hover-opacity"></i>
+  <i class="fa fa-twitter dom-hover-opacity"></i>
+  <i class="fa fa-linkedin dom-hover-opacity"></i>
+  <p>Powered by <a href="https://www.domschools.com/domcss/default.asp" target="_blank">dom.css</a></p>
 </footer>
 
 </body>
